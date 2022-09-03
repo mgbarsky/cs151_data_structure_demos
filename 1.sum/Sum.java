@@ -8,10 +8,9 @@
 public class Sum {
 
   	public static void main(String[] args) {
-			int s;
     		int a = Integer.valueOf(args[0]);
 			int b = Integer.valueOf(args[1]);
-			s = a + b;
+			int s = a + b;
 			System.out.println(a + " + " + b + " = " + s);
   	}
 }
