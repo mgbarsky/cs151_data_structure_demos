@@ -25,9 +25,24 @@ public class Dog implements Comparable<Dog>{
         return this.name.compareTo((another).name);
     }
     
+    //age is of type double
     public static Comparator<Dog> AgeComparator = new Comparator<Dog>() {        
         public int compare(Dog d1, Dog d2) {
-            return (int) (d1.age - d2.age);
+          //we can invoke compareTo of Double 
+            
+            Double a1 = d1.age;
+            Double a2 = d2.age;
+            
+            return a1.compareTo(a2);
+            
+            /*
+             * or we could write the `if clause`
+             * if (d1.age > d2.age)
+             * return 1;
+             * if (d1.age < d2.age)
+             * return -1;
+             * return 0;
+             */
         }
     };
 }

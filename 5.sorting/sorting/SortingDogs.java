@@ -12,9 +12,9 @@ public class SortingDogs {
     public static void main(String [] args) {
         List<Dog> dogs = new ArrayList<Dog> ();
         
-        dogs.add(new Dog("Lisa", 2, 10, "Alice"));
+        dogs.add(new Dog("Lisa", 2.4, 10, "Alice"));
         dogs.add(new Dog("Bart", 4, 15, "Bob"));
-        dogs.add(new Dog("Marge", 7, 12, "Alice"));
+        dogs.add(new Dog("Marge", 2.1, 12, "Alice"));
         dogs.add(new Dog("Lisa", 3, 8, "Bob"));
         
         System.out.println("Before sorting:");
